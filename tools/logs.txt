@@ -1,0 +1,907 @@
+DATE - 2024-03-19 20:58:17.968199
+Service - apteka.ru
+Status_code - 200
+ERROR:
+There is not
+
+
+DATE - 2024-03-19 20:58:33.022662
+Service - magnit
+Status_code - Unknown
+ERROR:
+Traceback (most recent call last):
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+TimeoutError: timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\urllib3\connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\urllib3\connectionpool.py", line 491, in _make_request
+    raise new_e
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\urllib3\connectionpool.py", line 467, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\urllib3\connectionpool.py", line 1099, in _validate_conn
+    conn.connect()
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\urllib3\connection.py", line 616, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\urllib3\connection.py", line 207, in _new_conn
+    raise ConnectTimeoutError(
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x00000281EB030C50>, 'Connection to new.moy.magnit.ru timed out. (connect timeout=15)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\urllib3\connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\urllib3\util\retry.py", line 515, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='new.moy.magnit.ru', port=443): Max retries exceeded with url: /local/ajax/login/ (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x00000281EB030C50>, 'Connection to new.moy.magnit.ru timed out. (connect timeout=15)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\tools\sender.py", line 250, in spam
+    r = session.post(url, json=json_, data=data, timeout=15, proxies=proxy, cookies=cookies, headers=headers)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\requests\sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\requests\adapters.py", line 507, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='new.moy.magnit.ru', port=443): Max retries exceeded with url: /local/ajax/login/ (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x00000281EB030C50>, 'Connection to new.moy.magnit.ru timed out. (connect timeout=15)'))
+
+
+
+DATE - 2024-03-19 20:58:34.228427
+Service - telegram
+Status_code - 200
+ERROR:
+There is not
+
+
+DATE - 2024-03-19 20:58:34.870601
+Service - citi_link
+Status_code - 429
+ERROR:
+There is not
+
+
+DATE - 2024-03-19 20:58:35.364063
+Service - akbarsa
+Status_code - 200
+ERROR:
+There is not
+
+
+DATE - 2024-03-19 20:58:35.618174
+Service - yota
+Status_code - Unknown
+ERROR:
+False
+
+
+DATE - 2024-03-19 20:58:36.483265
+Service - b_apteka
+Status_code - 403
+ERROR:
+There is not
+
+
+DATE - 2024-03-19 20:58:37.209153
+Service - pochtabank
+Status_code - 200
+ERROR:
+There is not
+
+
+DATE - 2024-03-19 20:58:37.477095
+Service - mt_free
+Status_code - 200
+ERROR:
+There is not
+
+
+DATE - 2024-03-19 20:58:38.236629
+Service - megafon.tv
+Status_code - 503
+ERROR:
+There is not
+
+
+DATE - 2024-03-19 20:58:38.521220
+Service - totopizza
+Status_code - 200
+ERROR:
+There is not
+
+
+DATE - 2024-03-19 20:58:39.175934
+Service - zdesapteka
+Status_code - 200
+ERROR:
+There is not
+
+
+DATE - 2024-03-19 20:58:39.418861
+Service - stockmann
+Status_code - 403
+ERROR:
+There is not
+
+
+DATE - 2024-03-19 20:58:39.933257
+Service - SberUslugi
+Status_code - 200
+ERROR:
+There is not
+
+
+DATE - 2024-03-19 20:58:40.177195
+Service - victoria
+Status_code - Unknown
+ERROR:
+Traceback (most recent call last):
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\urllib3\connectionpool.py", line 467, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\urllib3\connectionpool.py", line 1099, in _validate_conn
+    conn.connect()
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\urllib3\connection.py", line 653, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\urllib3\connection.py", line 806, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\urllib3\util\ssl_.py", line 465, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\urllib3\util\ssl_.py", line 509, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Egor\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 517, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Egor\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 1108, in _create
+    self.do_handshake()
+  File "C:\Users\Egor\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 1379, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1006)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\urllib3\connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\urllib3\connectionpool.py", line 491, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1006)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\urllib3\connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\urllib3\util\retry.py", line 515, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='new.victoria-group.ru', port=443): Max retries exceeded with url: /api/v2/manzana/Identity/RequestAdvancedPhoneEmailRegistration (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1006)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\tools\sender.py", line 250, in spam
+    r = session.post(url, json=json_, data=data, timeout=15, proxies=proxy, cookies=cookies, headers=headers)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\requests\sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\requests\adapters.py", line 517, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='new.victoria-group.ru', port=443): Max retries exceeded with url: /api/v2/manzana/Identity/RequestAdvancedPhoneEmailRegistration (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1006)')))
+
+
+
+DATE - 2024-03-19 20:58:41.424038
+Service - sunlight
+Status_code - 200
+ERROR:
+There is not
+
+
+DATE - 2024-03-19 20:58:41.978870
+Service - ok.ru
+Status_code - 200
+ERROR:
+There is not
+
+
+DATE - 2024-03-19 20:58:44.231377
+Service - beerlogapizza
+Status_code - Unknown
+ERROR:
+False
+
+
+DATE - 2024-03-19 20:58:45.300433
+Service - wildberries
+Status_code - 200
+ERROR:
+There is not
+
+
+DATE - 2024-03-19 20:58:45.571791
+Service - tashirpizza
+Status_code - 200
+ERROR:
+There is not
+
+
+DATE - 2024-03-19 20:58:45.983696
+Service - my-shop
+Status_code - 200
+ERROR:
+There is not
+
+
+DATE - 2024-03-19 20:58:46.368656
+Service - bisonpizza
+Status_code - 400
+ERROR:
+There is not
+
+
+DATE - 2024-03-19 20:58:46.629876
+Service - magnitapteka
+Status_code - 403
+ERROR:
+There is not
+
+
+DATE - 2024-03-19 20:58:47.052782
+Service - kent
+Status_code - 200
+ERROR:
+There is not
+
+
+DATE - 2024-03-19 20:58:47.284040
+Service - polyana1c
+Status_code - 403
+ERROR:
+There is not
+
+
+DATE - 2024-03-19 20:58:47.836493
+Service - citystarwear
+Status_code - 200
+ERROR:
+There is not
+
+
+DATE - 2024-03-19 20:58:48.614711
+Service - vardex
+Status_code - 200
+ERROR:
+There is not
+
+
+DATE - 2024-03-19 20:58:49.095559
+Service - tinkoff
+Status_code - 200
+ERROR:
+There is not
+
+
+DATE - 2024-03-19 20:58:49.529845
+Service - vesnashop
+Status_code - 200
+ERROR:
+There is not
+
+
+DATE - 2024-03-19 20:58:49.993323
+Service - lentacom
+Status_code - 403
+ERROR:
+There is not
+
+
+DATE - 2024-03-19 20:58:51.200838
+Service - mygames
+Status_code - 200
+ERROR:
+There is not
+
+
+DATE - 2024-03-19 20:58:52.183259
+Service - apteka-ot-sklada
+Status_code - 404
+ERROR:
+There is not
+
+
+DATE - 2024-03-19 20:58:52.979738
+Service - markformelle
+Status_code - 200
+ERROR:
+There is not
+
+
+DATE - 2024-03-19 21:02:34.274268
+Service - apteka.ru
+Status_code - 200
+ERROR:
+There is not
+
+
+DATE - 2024-03-19 21:02:49.290932
+Service - magnit
+Status_code - Unknown
+ERROR:
+Traceback (most recent call last):
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+TimeoutError: timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\urllib3\connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\urllib3\connectionpool.py", line 491, in _make_request
+    raise new_e
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\urllib3\connectionpool.py", line 467, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\urllib3\connectionpool.py", line 1099, in _validate_conn
+    conn.connect()
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\urllib3\connection.py", line 616, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\urllib3\connection.py", line 207, in _new_conn
+    raise ConnectTimeoutError(
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x00000148267E3050>, 'Connection to new.moy.magnit.ru timed out. (connect timeout=15)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\urllib3\connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\urllib3\util\retry.py", line 515, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='new.moy.magnit.ru', port=443): Max retries exceeded with url: /local/ajax/login/ (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x00000148267E3050>, 'Connection to new.moy.magnit.ru timed out. (connect timeout=15)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\tools\sender.py", line 250, in spam
+    r = session.post(url, json=json_, data=data, timeout=15, proxies=proxy, cookies=cookies, headers=headers)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\requests\sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\requests\adapters.py", line 507, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='new.moy.magnit.ru', port=443): Max retries exceeded with url: /local/ajax/login/ (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x00000148267E3050>, 'Connection to new.moy.magnit.ru timed out. (connect timeout=15)'))
+
+
+
+DATE - 2024-03-19 21:02:50.325602
+Service - telegram
+Status_code - 200
+ERROR:
+There is not
+
+
+DATE - 2024-03-19 21:02:50.832606
+Service - citi_link
+Status_code - 429
+ERROR:
+There is not
+
+
+DATE - 2024-03-19 21:02:51.092919
+Service - yota
+Status_code - Unknown
+ERROR:
+False
+
+
+DATE - 2024-03-19 21:02:51.947880
+Service - b_apteka
+Status_code - 403
+ERROR:
+There is not
+
+
+DATE - 2024-03-19 21:02:52.901773
+Service - pochtabank
+Status_code - 200
+ERROR:
+There is not
+
+
+DATE - 2024-03-19 21:02:53.358085
+Service - mt_free
+Status_code - 200
+ERROR:
+There is not
+
+
+DATE - 2024-03-19 21:02:53.842264
+Service - totopizza
+Status_code - 200
+ERROR:
+There is not
+
+
+DATE - 2024-03-19 21:02:54.787858
+Service - zdesapteka
+Status_code - 200
+ERROR:
+There is not
+
+
+DATE - 2024-03-19 21:02:55.468168
+Service - SberUslugi
+Status_code - 200
+ERROR:
+There is not
+
+
+DATE - 2024-03-19 21:02:55.858441
+Service - victoria
+Status_code - Unknown
+ERROR:
+Traceback (most recent call last):
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\urllib3\connectionpool.py", line 467, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\urllib3\connectionpool.py", line 1099, in _validate_conn
+    conn.connect()
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\urllib3\connection.py", line 653, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\urllib3\connection.py", line 806, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\urllib3\util\ssl_.py", line 465, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\urllib3\util\ssl_.py", line 509, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Egor\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 517, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Egor\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 1108, in _create
+    self.do_handshake()
+  File "C:\Users\Egor\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 1379, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1006)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\urllib3\connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\urllib3\connectionpool.py", line 491, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1006)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\urllib3\connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\urllib3\util\retry.py", line 515, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='new.victoria-group.ru', port=443): Max retries exceeded with url: /api/v2/manzana/Identity/RequestAdvancedPhoneEmailRegistration (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1006)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\tools\sender.py", line 250, in spam
+    r = session.post(url, json=json_, data=data, timeout=15, proxies=proxy, cookies=cookies, headers=headers)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\requests\sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\requests\adapters.py", line 517, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='new.victoria-group.ru', port=443): Max retries exceeded with url: /api/v2/manzana/Identity/RequestAdvancedPhoneEmailRegistration (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1006)')))
+
+
+
+DATE - 2024-03-19 21:02:57.493585
+Service - sunlight
+Status_code - 200
+ERROR:
+There is not
+
+
+DATE - 2024-03-19 21:02:57.898441
+Service - ok.ru
+Status_code - 200
+ERROR:
+There is not
+
+
+DATE - 2024-03-19 21:03:00.785433
+Service - beerlogapizza
+Status_code - Unknown
+ERROR:
+False
+
+
+DATE - 2024-03-19 21:03:01.865297
+Service - wildberries
+Status_code - 200
+ERROR:
+There is not
+
+
+DATE - 2024-03-19 21:03:02.118538
+Service - tashirpizza
+Status_code - 200
+ERROR:
+There is not
+
+
+DATE - 2024-03-19 21:03:02.384577
+Service - my-shop
+Status_code - 200
+ERROR:
+There is not
+
+
+DATE - 2024-03-19 21:03:02.831170
+Service - bisonpizza
+Status_code - 400
+ERROR:
+There is not
+
+
+DATE - 2024-03-19 21:03:03.200107
+Service - magnitapteka
+Status_code - 403
+ERROR:
+There is not
+
+
+DATE - 2024-03-19 21:03:03.597453
+Service - kent
+Status_code - 200
+ERROR:
+There is not
+
+
+DATE - 2024-03-19 21:03:04.028339
+Service - citystarwear
+Status_code - 200
+ERROR:
+There is not
+
+
+DATE - 2024-03-19 21:03:04.605044
+Service - vardex
+Status_code - 200
+ERROR:
+There is not
+
+
+DATE - 2024-03-19 21:03:04.943785
+Service - tinkoff
+Status_code - 200
+ERROR:
+There is not
+
+
+DATE - 2024-03-19 21:03:05.548237
+Service - vesnashop
+Status_code - 200
+ERROR:
+There is not
+
+
+DATE - 2024-03-19 21:03:05.868842
+Service - lentacom
+Status_code - 403
+ERROR:
+There is not
+
+
+DATE - 2024-03-19 21:03:06.802012
+Service - apteka-ot-sklada
+Status_code - 404
+ERROR:
+There is not
+
+
+DATE - 2024-03-19 21:03:07.305110
+Service - markformelle
+Status_code - 200
+ERROR:
+There is not
+
+
+DATE - 2024-03-19 21:03:32.155003
+Service - sunlight
+Status_code - 200
+ERROR:
+There is not
+
+
+DATE - 2024-03-19 21:03:40.806357
+Service - akbarsa
+Status_code - 200
+ERROR:
+There is not
+
+
+DATE - 2024-03-19 21:03:42.714471
+Service - apteka-ot-sklada
+Status_code - 404
+ERROR:
+There is not
+
+
+DATE - 2024-03-19 21:03:56.435728
+Service - mygames
+Status_code - 404
+ERROR:
+There is not
+
+
+DATE - 2024-03-19 21:03:57.869989
+Service - yota
+Status_code - Unknown
+ERROR:
+False
+
+
+DATE - 2024-03-19 21:03:58.916967
+Service - b_apteka
+Status_code - 403
+ERROR:
+There is not
+
+
+DATE - 2024-03-19 21:03:59.367914
+Service - totopizza
+Status_code - 200
+ERROR:
+There is not
+
+
+DATE - 2024-03-19 21:04:00.225733
+Service - zdesapteka
+Status_code - 200
+ERROR:
+There is not
+
+
+DATE - 2024-03-19 21:04:01.468057
+Service - victoria
+Status_code - Unknown
+ERROR:
+Traceback (most recent call last):
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\urllib3\connectionpool.py", line 467, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\urllib3\connectionpool.py", line 1099, in _validate_conn
+    conn.connect()
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\urllib3\connection.py", line 653, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\urllib3\connection.py", line 806, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\urllib3\util\ssl_.py", line 465, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\urllib3\util\ssl_.py", line 509, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Egor\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 517, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Egor\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 1108, in _create
+    self.do_handshake()
+  File "C:\Users\Egor\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 1379, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1006)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\urllib3\connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\urllib3\connectionpool.py", line 491, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1006)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\urllib3\connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\urllib3\util\retry.py", line 515, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='new.victoria-group.ru', port=443): Max retries exceeded with url: /api/v2/manzana/Identity/RequestAdvancedPhoneEmailRegistration (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1006)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\tools\sender.py", line 250, in spam
+    r = session.post(url, json=json_, data=data, timeout=15, proxies=proxy, cookies=cookies, headers=headers)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\requests\sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Egor\PycharmProjects\ORION\ORION-Bomber\venv\Lib\site-packages\requests\adapters.py", line 517, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='new.victoria-group.ru', port=443): Max retries exceeded with url: /api/v2/manzana/Identity/RequestAdvancedPhoneEmailRegistration (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1006)')))
+
+
+
+DATE - 2024-03-19 21:04:03.615972
+Service - ok.ru
+Status_code - 200
+ERROR:
+There is not
+
+
+DATE - 2024-03-19 21:04:05.713933
+Service - beerlogapizza
+Status_code - Unknown
+ERROR:
+False
+
+
+DATE - 2024-03-19 21:04:07.948408
+Service - sunlight
+Status_code - 200
+ERROR:
+There is not
+
+
+DATE - 2024-03-19 21:04:08.412975
+Service - wildberries
+Status_code - 200
+ERROR:
+There is not
+
+
+DATE - 2024-03-19 21:04:08.818635
+Service - tashirpizza
+Status_code - 200
+ERROR:
+There is not
+
+
+DATE - 2024-03-19 21:04:09.159881
+Service - my-shop
+Status_code - 200
+ERROR:
+There is not
+
+
+DATE - 2024-03-19 21:04:09.434206
+Service - bisonpizza
+Status_code - 400
+ERROR:
+There is not
+
+
+DATE - 2024-03-19 21:04:09.697554
+Service - magnitapteka
+Status_code - 403
+ERROR:
+There is not
+
+
+DATE - 2024-03-19 21:04:10.119612
+Service - kent
+Status_code - 200
+ERROR:
+There is not
+
+
+DATE - 2024-03-19 21:04:10.434371
+Service - tinkoff
+Status_code - 200
+ERROR:
+There is not
+
+
+DATE - 2024-03-19 21:04:10.902211
+Service - vesnashop
+Status_code - 200
+ERROR:
+There is not
+
+
+DATE - 2024-03-19 21:04:12.449517
+Service - markformelle
+Status_code - 200
+ERROR:
+There is not
+
+
+DATE - 2024-03-19 21:04:18.423206
+Service - apteka-ot-sklada
+Status_code - 404
+ERROR:
+There is not
+
+
